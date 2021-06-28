@@ -1,7 +1,7 @@
 {
-  "name": "NikSam",
+  "name": "Samartsev",
   "version": "0.0.2",
-  "description": "NikSam",
+  "description": "Samartsev",
   "main": "index.js",
   "scripts": {
     "docker-start-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" up",

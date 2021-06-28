@@ -22,7 +22,7 @@ import Html from '../client/html'
 
 const Root = () => ''
 
-mongoose.connect('mongodb+srv://niksam:Qwerty123456@niksam.piavs.mongodb.net/niksam')
+mongoose.connect(process.env.MONGO_URL)
 
 try {
   // eslint-disable-next-line import/no-unresolved
@@ -269,7 +269,7 @@ server.use('/api/', (req, res) => {
 
 const [htmlStart, htmlEnd] = Html({
   body: 'separator',
-  title: 'NikSam'
+  title: 'Samartsev'
 }).split('separator')
 
 server.get('/', (req, res) => {
